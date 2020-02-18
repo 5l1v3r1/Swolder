@@ -1,0 +1,12 @@
+language: csharp
+solution: NoiseLab.PolyGen.sln
+mono: none
+dotnet: 3.0
+dist: trusty
+branches:
+  only:
+    - master
+    - develop
+script:
+ - dotnet restore
+ - dotnet build
